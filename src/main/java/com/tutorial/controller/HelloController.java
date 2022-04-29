@@ -16,6 +16,12 @@ public class HelloController {
 		return "Hi";
 	}
 	
+	@GetMapping("/api/hola2")
+	public String hola2() {
+		System.out.println("xd"+message);
+		return "Hi2";
+	}
+	
 	@GetMapping("/")
 	public String bootstrap() {
 		System.out.println("bootstrap");
