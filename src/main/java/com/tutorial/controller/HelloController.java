@@ -15,4 +15,10 @@ public class HelloController {
 		System.out.println("xd"+message);
 		return "Hi";
 	}
+	
+	@GetMapping("/")
+	public String bootstrap() {
+		System.out.println("bootstrap");
+		return "bootstrap";
+	}
 }
